@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+rectangle "Alloy instance / corrected model" {
+  object "Person$1" as Person1
+  object "Car$0" as Car0 {
+    model = SUV
+  }
+  Person1 -- Car0 : cars
+}
+note bottom
+The instance is taken from an Alloy 6.2 run result.
+end note
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+rectangle "Computer network\nAlloy instance acyclicNetwork" {
+  node "Computer$0" as C0
+  node "Computer$1" as C1
+  C0 --> C1 : Channel$3 / OneWay
+}
+note bottom
+The channel and direction are taken from an Alloy 6.2 solution.
+There is no reverse edge, and the physical network is connected.
+end note
+@enduml

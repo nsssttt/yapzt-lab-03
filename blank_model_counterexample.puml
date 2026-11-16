@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+rectangle "Alloy counterexample / NonBlankModel" {
+  class "Car$0" as Car0
+  note right of Car0
+    model = " "
+    A single whitespace value
+  end note
+}
+@enduml
